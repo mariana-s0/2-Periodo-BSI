@@ -16,7 +16,7 @@ int main(){
     float salario;
 
     arq = fopen("dados.txt","r+");
-    if(arq != NULL)
+    if(arq == NULL)
         arq = fopen("dados.txt","w+");
         
     if(arq==NULL){
@@ -55,7 +55,7 @@ int main(){
 
         }while(sair!=1);
         //posicionado no inicio do arquivo
-        fseek(arq,0,SEEK_CUR);
+        fseek(arq,0,SEEK_SET);
         //rewind(arq);
         while(fscanf(arq,"%10[^;];%100[^;];%f\n",matricula,nome,salario)==3)
             printf("%s\t\t%s\t.2f\n",matricula,nome,salario);
