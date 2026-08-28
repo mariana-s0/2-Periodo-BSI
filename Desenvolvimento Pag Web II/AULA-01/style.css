@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn1{
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+}
+.btn2{
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+}
