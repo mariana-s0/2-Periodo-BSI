@@ -1,26 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão Prova <I></I></title>
-    <link rel="stylesheet" href="javascript.js">
+    <title>Exercícios JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- QUESTÃO 1 -->
     <div class="centralizado">
-        <button id="btncor">Mudar cor</button>
+        <button id="btnCor">Mudar Cor</button>
     </div>
-    <div class="oculto">
-        <button id="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam autem atque temporibus dicta 
-        eius distinctio ut facilis veritatis quo repellat iste, fugiat expedita! Beatae veniam dolorem odit et ea voluptatem.
+
+    <hr>
+
+    <!-- QUESTÃO 2 -->
+    <div class="containerTexto">
+        <button id="btnTexto">Mostrar / Ocultar Texto</button>
+
+        <p id="paragrafo">
+            Este é o texto que será exibido ou ocultado.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- QUESTÃO 3 -->
+    <div class="containerInputs">
+
+        <input
+            type="text"
+            id="txtTexto"
+            placeholder="Digite um texto">
+
+        <input
+            type="number"
+            id="txtNumero"
+            placeholder="Digite um número">
+
+        <button id="btnRepetir">
+            Exibir no Console
         </button>
+
     </div>
-    <div>
-        <input class="um">
-        <input class="dois">
-        <button class="enviar">enviar</button>
+
+    <hr>
+
+    <!-- QUESTÃO 4 -->
+    <div class="containerBox">
+
+        <button id="btnBox">
+            Aplicar Estilos
+        </button>
+
+        <div id="html_box"></div>
+
     </div>
-    <div id="html_box"></div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
