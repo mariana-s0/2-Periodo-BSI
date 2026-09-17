@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.centralizado{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
