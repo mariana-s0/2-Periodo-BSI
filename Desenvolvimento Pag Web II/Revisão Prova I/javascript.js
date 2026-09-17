@@ -1,4 +1,5 @@
-/*1.Crie um botão centralizado (na horizontal e vertical) que quando clicado 
+
+*1.Crie um botão centralizado (na horizontal e vertical) que quando clicado 
 muda a cor de fundo da página na seguinte sequência : azul -> verde -> amarelo -> vermelho ->
 rosa -> azul ...
 
@@ -26,12 +27,92 @@ E no HTML :
 Adicione um botão que quando o usuário clicar, aplique os estilos definidos na variável box na div do HTML.
 */ 
 
-const cores = ["blue", "green", "yellow", "red", "pink"];
-const box = { 
-    "largura":"150px",
-    "altura":"200px",
-    "cores":{
-        "fundo":"blue",
-        "borda":"red"
-        }
+// ==========================
+// QUESTÃO 1
+// ==========================
+
+const btnCor = document.getElementById("btnCor");
+
+const cores = [
+    "blue",
+    "green",
+    "yellow",
+    "red",
+    "pink"
+];
+
+let indiceCor = 0;
+
+btnCor.addEventListener("click", () => {
+    document.body.style.backgroundColor = cores[indiceCor];
+
+    indiceCor++;
+
+    if(indiceCor >= cores.length){
+        indiceCor = 0;
+    }
+});
+
+
+// ==========================
+// QUESTÃO 2
+// ==========================
+
+const btnTexto = document.getElementById("btnTexto");
+const paragrafo = document.getElementById("paragrafo");
+
+btnTexto.addEventListener("click", () => {
+
+    if(paragrafo.style.display === "none"){
+        paragrafo.style.display = "block";
+    }else{
+        paragrafo.style.display = "none";
+    }
+
+});
+
+
+// ==========================
+// QUESTÃO 3
+// ==========================
+
+const btnRepetir = document.getElementById("btnRepetir");
+const txtTexto = document.getElementById("txtTexto");
+const txtNumero = document.getElementById("txtNumero");
+
+btnRepetir.addEventListener("click", () => {
+
+    let texto = txtTexto.value;
+    let numero = Number(txtNumero.value);
+
+    for(let i = 0; i < numero; i++){
+        console.log(texto);
+    }
+
+});
+
+
+// ==========================
+// QUESTÃO 4
+// ==========================
+
+const box = {
+    largura: "150px",
+    altura: "200px",
+    cores: {
+        fundo: "blue",
+        borda: "red"
+    }
 };
+
+const btnBox = document.getElementById("btnBox");
+const htmlBox = document.getElementById("html_box");
+
+btnBox.addEventListener("click", () => {
+
+    htmlBox.style.width = box.largura;
+    htmlBox.style.height = box.altura;
+    htmlBox.style.backgroundColor = box.cores.fundo;
+    htmlBox.style.border = `3px solid ${box.cores.borda}`;
+
+});
