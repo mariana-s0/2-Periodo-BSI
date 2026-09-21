@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+#curso{
+    margin-bottom: 50px;
+}
+
+#gato{
+    display: none;
+}
+#cachorro{
+    display: none;
+}
