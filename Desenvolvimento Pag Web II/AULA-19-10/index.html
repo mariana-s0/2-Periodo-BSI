@@ -46,13 +46,13 @@
             <p>Benefícios</p>
             <div>
                 <label>
-                    <input id=beneficio type="checkbox" value="contactless">Contactless
+                    <input name=beneficio type="checkbox" value="contactless">Contactless
                 </label>
                 <label>
-                    <input id="beneficio" type="checkbox" value="internacional">Internacional
+                    <input name="beneficio" type="checkbox" value="internacional">Internacional
                 </label>
                 <label>
-                    <input id="beneficio" type="checkbox" value="cashback">CashBack
+                    <input name="beneficio" type="checkbox" value="cashback">CashBack
                 </label>
             </div>
         </div>
@@ -66,12 +66,13 @@
                 <span id="nomeCartao">NOME TITULAR</span>
                 <p>VALIDADE</p>
                 <span id="validadeCartao">MM/AA</span>
-                <span id="bandeiraCartao">Visa</span>
+                <span id="bandeiraCartao"></span>
             </div>
-            <h1>Contactless</h1>
-            <h1>Internacional</h1>
-            <h1>CashBack</h1>
-            
+            <div >
+                <h1 id="contactless">Contactless</h1>
+                <h1 id="internacional">Internacional</h1>
+                <h1 id="cashback">CashBack</h1>
+            </div>   
             <p id="car">Este cartão é apenas uma demonstração visual. Não insira dados reais.</p>
         </div>
     </div>
