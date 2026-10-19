@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+  
 
+    <div class="Personalizador">
+        <h1 id="per">Personalizador de Cartão</h1>
+        <h3>Preencha os campos e veja o cartão mudar em tempo real.</h3>
+    </div>
+
+    <div class="container">
+        <div class="one">
+            <h2>Personalize o seu cartão</h2>
+            <p>Nome do titular</p>
+            <input type="text" id="nome" placeholder="Nome do titular"></input>
+            <p>Número do cartão</p>
+            <input type="text" id="numero" placeholder="0000 0000 0000 0000"></input>
+            <p id="digite">Digite até 16 vezes. Use apenas dados fictícios.</p>
+            <p>Validade</p>
+            <input type="text" id="validade" placeholder="MM/AA">
+            <p>Bandeira do cartão</p>
+            <select id="tipo">
+                <option value=""></option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="elo">Elo</option>
+            </select>
+            <p>Modelo do cartão</p>
+            <div>
+               <label>
+                    <input type="radio" name="modelo" value="classico" checked>Clássico
+                </label>
+                <label>
+                    <input type="radio" name="modelo" value="gold">Gold
+                </label>
+                <label>
+                    <input type="radio" name="modelo" value="platinum">Platinum
+                </label>
+            </div>
+            <p>Benefícios</p>
+            <div>
+                <label>
+                    <input id=beneficio type="checkbox" value="contactless">Contactless
+                </label>
+                <label>
+                    <input id="beneficio" type="checkbox" value="internacional">Internacional
+                </label>
+                <label>
+                    <input id="beneficio" type="checkbox" value="cashback">CashBack
+                </label>
+            </div>
+        </div>
+        <div class="two">
+            <h2>Pré-Vizualização</h2>
+            <div class="cartao">
+                <p class="bancoExemplo">BANCO EXEMPLO</p>
+                <div class="bandeira"></div>
+                <h3 id="numeroCartao">0000 0000 0000 0000</h3>
+                <p>TITULAR</p>
+                <span id="nomeCartao">NOME TITULAR</span>
+                <p>VALIDADE</p>
+                <span id="validadeCartao">MM/AA</span>
+                <span id="bandeiraCartao">Visa</span>
+            </div>
+            <h1>Contactless</h1>
+            <h1>Internacional</h1>
+            <h1>CashBack</h1>
+            
+            <p id="car">Este cartão é apenas uma demonstração visual. Não insira dados reais.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
