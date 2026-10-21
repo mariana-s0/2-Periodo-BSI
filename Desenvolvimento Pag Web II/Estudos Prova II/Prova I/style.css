@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 25px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+input {
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+}
+
+.contador {
+    margin-bottom: 25px;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+#barra {
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#progresso {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+}
+
+p {
+    margin-top: 15px;
+}
