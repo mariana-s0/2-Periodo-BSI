@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grafico.css">
+    <title>Gráfico</title>
+</head>
+<body>
+    <h1 class="scatter">SCATTER PLOT</h1>
+    <div id="container">
+        <p>Notas (Eixo X)</p>
+        <input type="text" placeholder="Números separados por vírgula" class="x">
+        <p>Dias de Estudo (Eixo Y)</p>
+        <input type="text" placeholder="Números separados por vírgula" class="y">
+        <br>
+        <input type="checkbox" class="inverte">
+        <label>Inverter eixos</label>
+        <p>* Validar se a quantidade de notas é igual á quantidade de dias</p>
+        <button id="gerar"> ▶ Gerar Gráfico</button>
+        <div class="grafico">
+            <div class="ponto"></div>
+        </div>
+        
+    <script src="grafico.js"></script>
+</body>
+</html>

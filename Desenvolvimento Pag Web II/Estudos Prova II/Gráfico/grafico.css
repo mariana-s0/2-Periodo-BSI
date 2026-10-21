@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#container{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.scatter{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+   margin-right: 25px;
+}
+.inverte{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.x{
+    margin-bottom: 20px;
+}
+.y{
+    margin-bottom: 20px;
+}
+#gerar{
+    margin-top: 5px;
+}
+.grafico{
+    display: none;
+    width: 400px;
+    height: 300px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    margin: 30px;
+}
+.ponto {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
