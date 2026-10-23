@@ -1,0 +1,66 @@
+const barra = document.getElementById("barra");
+const legenda = document.getElementById("legenda");
+const valor = document.getElementById("valor");
+const largura = document.getElementById("largura");
+const espessura = document.getElementById("espessura");
+const passaL = document.getElementById("passaL");
+const atualiza = document.getElementById("atualiza");
+const porcentagem = document.getElementById("porcentagem");
+const pt2 = document.getElementById("pt2");
+const exibir = document.getElementById("exibir");
+const corB =  document.getElementById("corB");
+const corF = document.getElementById("corF");
+const corBB = document.getElementById("corBB");
+const espessuras = document.querySelectorAll('input[name="espessuras"]');
+const sombra1 = document.getElementById("sobra1");
+
+atualiza.addEventListener("click", function(){
+        passaL.addEventListener("input" , function(){
+        document.getElementById("legenda").textContent = passaL.value;
+    });
+
+        valor.addEventListener("input", function(){
+        document.getElementById("porcentagem").textContent = valor.value;
+        barra.style.paddingLeft = valor.value;
+        });
+  
+        largura.addEventListener("input", function(){
+            barra.style.width = largura.value;
+        });
+
+        corB.addEventListener("input", function(){
+            barra.style.backgroundColor = corB.value;
+        });
+        corF.addEventListener("input", function(){
+            pt2.style.backgroundColor = corF.value;
+        });
+        corBB.addEventListener("input", function(){
+            barra.style.boxShadow = corBB.value;
+            pt2.style.boxShadow = corBB.value;
+        });
+
+        espessuras.forEach(function(){
+           if(espessura.value === "fina"){
+            barra.style.padding = '1px';
+        }else
+            if(espessura.value === "media"){
+                barra.style.padding = '3px';
+            }else
+                if(espessura.value === "grossa"){
+                    barra.style.padding = '5px';
+                }
+        });
+        if(sombra1.checked && sombra1.value === "sim"){
+            barra.style.boxShadow = display-block; 
+        }
+    });
+
+
+
+
+        
+
+
+
+
+

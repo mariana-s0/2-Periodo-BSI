@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Prova Web II</title>
+</head>
+<body>
+    <div id="alinha">
+         <h2>Personalizar Gráfico</h2>
+        <p id="legenda">Nota média da turma</p>
+        <div id="barra">
+            <span id="porcentagem"></span>
+            
+        </div>
+        <div id="pt2"></div>
+        
 
+        <p>Legenda do Gráfico</p>
+        <label>
+            <input type="text" id="passaL">
+        </label>
+        
+        <p>Valor do Gráfico (%)</p>
+        <label>
+            <input type="text" id="valor">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="exibir"> Exibir valor numérico
+        </label>
+
+        <p>Largura do Gráfico (px)</p>
+        <label>
+            <input type="text" id="largura">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox"> Bordas arredondadas
+        </label>
+
+        <p>Espessura da borda</p>
+        <select id="espessura">
+                <option name="espessuras" value="fina">Fina (1px)</option>
+                <option name="espessuras" value="media">Média (3px)</option>
+                <option name="espessuras" value="grossa">Grossa (5px)</option>
+        </select>
+
+        <p>Cor da borda</p>
+        <label>
+            <input id="corBB" placeholder="0000ff">
+        </label>
+        
+        <p>Cor do fundo</p>
+        <label>
+            <input id="corF" placeholder="0000ff">
+        </label>
+
+        <p >Cor da barra</p>
+        <label>
+            <input id="corB" placeholder="0000ff">
+        </label>
+
+        <p>Sombra no gráfico</p>
+        <label>
+            <input id="sombra1" type="radio">sim
+            <input id="sombra1" type="radio">não
+        </label>
+        <br>
+
+        <button id="atualiza">Atualizar</button>
+    </div>
+   
+    
+</body>
+</html>
